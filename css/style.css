@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-primario: rgb(255, 249, 208);
+  --Secundario: rgb(202, 244, 255);
+  --Terciario : rgb(160, 222, 255);
+  --Cuarto : rgb(90, 178, 255);
+  --bordes-redondeado :10px;
+}
+
+body{
+  font-family: "Bitcount Grid Double", system-ui;
+  background-color: white;
+}
+
+.navbar{
+  background-color: grey;
+  padding: 1rem;
+  text-align: end;
+  position: relative;
+}
+
+.navbar__titulo{
+  display: inline-block;
+  position: absolute;
+  font-size: 20px;
+  left: 2%;
+}
+
+.navbar__contenedor{
+  width: 40%;
+  display: inline-block;
+}
+
+.navbar__item{
+  display: inline-block;
+}
+
+.navbar__link{
+  text-decoration: none;
+  margin-right: 3em;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar__buscador{
+  display: inline-block;
+  width: 20%;
+  margin-right: 30px;
+  position: relative;
+}
+
+.navbar__input{
+  width: 90%;
+  padding: 7px;
+  border-radius: var(--bordes-redondeado);
+}
+
+.navbar__icono{
+  position: absolute;
+  right: 0.5em;
+  top: 18%;
+  font-size: 20px;
+}
+
+.navbar__boton{
+  text-decoration: none;
+  border-radius: var(--bordes-redondeado);
+  padding: 8px 15px;
+  margin-right: 50px;
+  background-color: white;
+}
+
+.contenido__recomendaciones{
+  margin-top: 2em;
+  margin-left: 5em;
+}
+
+.contenido__recomendacion{
+  background:linear-gradient(rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.369)), url("../images/conjunto-ropa-calida-capucha-azul-roja_1324823-10472.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 18%;
+  height: 8em;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: var(--bordes-redondeado);
+  margin-left: 5%;
+  display: inline-block;
+}
+
+.contenido__texto{  
+  text-align: center;
+  margin-top: 3em;
+  text-shadow: 5px 5px black;
+}
+
+.contenido__tarjetas{
+  margin-top: 2em;
+  margin-left: 5.5em;
+}
+
+.contenido__productos{
+  border-radius: var(--bordes-redondeado);
+  width: 22%;
+  margin-top: 30px;
+  margin-left: 20px;
+  display: inline-block;
+  background-color: grey;
+  position: relative;
+  padding-bottom: 30px;
+  color: whitesmoke;
+}
+
+.contenido__imagen{
+  width: 70%;
+  height: 20rem;
+  object-fit: contain;
+  margin-top: 20px;
+  margin-left: 16%;
+  border-radius: var(--bordes-redondeado);
+}
+
+.contenido__informacion{
+  font-family: "Noto Serif",
+    serif;
+  padding: 30px;
+  text-align: center;
+}
+
+.contenido__titulo-prenda{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.contenido__descripcion-prenda{
+  margin-bottom: 20px;
+
+}
+
+
+.contenido__boton{
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 39%;
+  text-decoration: none;
+}
+
