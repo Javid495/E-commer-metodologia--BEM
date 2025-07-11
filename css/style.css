@@ -1,39 +1,49 @@
+/* Tipografias usadas en el proyecto */
 @import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/* medidas establecidas por defecto */
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* propiedades customizadas */
 :root{
-  --color-primario: rgb(255, 249, 208);
-  --Secundario: rgb(202, 244, 255);
-  --Terciario : rgb(160, 222, 255);
-  --Cuarto : rgb(90, 178, 255);
+  --primary: rgb(255, 32, 78);
+  --segundo: rgb(160, 21, 62);
+  --tercero: rgb(93, 14, 65);
+  --cuarto: rgb(0, 34, 77);
   --bordes-redondeado :10px;
 }
 
+/* estilos aplicados en cuerpo principal de la pagina */
 body{
   font-family: "Bitcount Grid Double", system-ui;
-  background-color: white;
+  background-color: var(--cuarto);
 }
 
+/* Estilos aplicados del contenedor navbar */
 .navbar{
-  background-color: grey;
+  background-color: var(--tercero);
   padding: 1rem;
   text-align: end;
   position: relative;
 }
 
+/* Estilos aplicados en el titulo del encabezado */
 .navbar__titulo{
   display: inline-block;
   position: absolute;
+  color: white;
+  margin-top: 5px;
   font-size: 20px;
-  left: 2%;
+  left: 6%;
 }
 
+/* Estilos aplicados en los links de pagina */
 .navbar__contenedor{
   width: 40%;
   display: inline-block;
@@ -46,10 +56,15 @@ body{
 .navbar__link{
   text-decoration: none;
   margin-right: 3em;
-  color: black;
-  font-weight: bold;
+  color: whitesmoke;
 }
 
+.navbar__link:hover{
+  color: var(--primary);
+  border-bottom: 1px solid white;
+}
+
+/* Estilos usados en el buscador */
 .navbar__buscador{
   display: inline-block;
   width: 20%;
@@ -70,25 +85,38 @@ body{
   font-size: 20px;
 }
 
+/* Estilos del boton buscar */
 .navbar__boton{
   text-decoration: none;
   border-radius: var(--bordes-redondeado);
   padding: 8px 15px;
   margin-right: 50px;
-  background-color: white;
+  color: white;
+  background-color: var(--primary);
 }
 
+.navbar__boton:hover{
+  background-color: var(--segundo);
+}
+
+/* ocualdar el boton menu */
+.navbar__menu{
+  display: none;
+}
+
+/* Estilo aplicados en el contenedor recomendaciones */
 .contenido__recomendaciones{
   margin-top: 2em;
   margin-left: 5em;
 }
 
+/* Estilos aplciados en cada tarjeta de recomendacion */
 .contenido__recomendacion{
   background:linear-gradient(rgba(0, 0, 0, 0.477), rgba(0, 0, 0, 0.369)), url("../images/conjunto-ropa-calida-capucha-azul-roja_1324823-10472.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 18%;
-  height: 8em;
+  height: 4em;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -97,61 +125,148 @@ body{
   display: inline-block;
 }
 
+/* Estilos del texto de recomendacion */
 .contenido__texto{  
   text-align: center;
-  margin-top: 3em;
+  font-size: 15px;
+  margin-top: 1.5em;
   text-shadow: 5px 5px black;
 }
 
+/* Contenedor princippla de las tarjetas */
 .contenido__tarjetas{
   margin-top: 2em;
   margin-left: 5.5em;
 }
 
+/* Estilo y medidas de las cards */
 .contenido__productos{
   border-radius: var(--bordes-redondeado);
   width: 22%;
   margin-top: 30px;
   margin-left: 20px;
   display: inline-block;
-  background-color: grey;
+  background-color: var(--tercero);
   position: relative;
   padding-bottom: 30px;
   color: whitesmoke;
 }
 
+/* Medidas aplicadas en las imagenes */
 .contenido__imagen{
   width: 70%;
-  height: 20rem;
+  height: 15rem;
   object-fit: contain;
   margin-top: 20px;
   margin-left: 16%;
   border-radius: var(--bordes-redondeado);
 }
 
+/* Contenendor de la informacion de prendas */
 .contenido__informacion{
-  font-family: "Noto Serif",
-    serif;
+  font-family: "Noto Serif",serif;
   padding: 30px;
   text-align: center;
 }
 
+/* medidas en el titulo nombre de la prenda */
 .contenido__titulo-prenda{
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-size: 20px;
 }
 
+/* DEscripcion de la prenda */
 .contenido__descripcion-prenda{
   margin-bottom: 20px;
-
 }
 
-
+/* Estilos aplicados en el boton comprar */
 .contenido__boton{
-  background-color: white;
+  background-color: var(--primary);
+  color: white;
   padding: 10px;
   border-radius: 10px;
   margin-left: 39%;
   text-decoration: none;
 }
 
+.contenido__boton:hover{
+  background-color: var(--segundo);
+}
+
+/* Estilos de encabezado de pagina */
+.footer{
+  margin-top: 30px;
+  background-color: var(--tercero);
+  color: white;
+}
+
+.footer__derechos{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer__contactanos{
+  padding: 20px;
+}
+
+/* Medias querys aplicadas en el proyecto */
+@media(max-width:1068px){
+
+  .navbar{
+    padding: 10px;
+  }
+
+  .navbar__contenedor, .navbar__buscador, .navbar__boton{
+    display: none;
+  }
+
+  .navbar__buscador{
+    width: 35%;
+  }
+
+  .navbar__boton{
+    margin-right: 5em;
+  }
+
+  .navbar__menu{
+    display: inline-block;
+    color: white;
+    background-color: var(--primary);
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+
+  .contenido__recomendacion{
+    width: 35%;
+    margin-bottom: 20px;
+    height: 6em;
+  }
+
+  .contenido__texto{
+    margin-top: 3rem;
+  }
+
+  .contenido__productos{
+    width: 37%;
+  }
+}
+
+@media(max-width:480px){
+
+  .contenido__recomendacion{
+    width: 85%;
+    margin-left: 4px;
+  }
+
+  .contenido__productos{
+    width: 80%;
+    margin-left: 4px;
+  }
+
+  .footer{
+    font-size: 14px;
+  }
+}

@@ -8,8 +8,14 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- contenedor principal de la navbar -->
   <section class="navbar">
+
+
+    <!-- Titulo principal -->
     <h1 class="navbar__titulo">The Sytle of Brooklyn</h1>
+
+    <!-- elementos de navegacion de la navbar -->
     <nav class="navbar__contenedor">
       <ul class="navbar__lista-navegacion">
         <li class="navbar__item">
@@ -24,14 +30,20 @@
       </ul>
     </nav>
 
+    <!-- Barra de buscador  -->
     <div class="navbar__buscador">
-      <input class="navbar__input" placeholder="Busca un elemento en especifico" type="text" name="" id="">
+      <input class="navbar__input"  type="text" name="" id="">
       <i class='navbar__icono  bx-search'  ></i> 
     </div>
     <a class="navbar__boton" href="">Buscar</a>
+
+    <!-- Boton de buscador -->
+    <i class='bxr  bx-menu-close  navbar__menu'  ></i> 
   </section>
 
+  <!-- Contenedor del contenido principal -->
   <section class="contenido">
+    <!-- Recomendaciones -->
     <div class="contenido__recomendaciones">
       <div class="contenido__recomendacion">
         <p class="contenido__texto">Recomendados del dia</p>
@@ -50,8 +62,10 @@
       </div>
     </div>
 
-
+    <!-- Contenedor tarjeta de productos -->
     <div class="contenido__tarjetas">
+
+      <!-- Cards de productos -->
       <div class="contenido__productos">
         <img class="contenido__imagen" src="images/463788-800-800.webp" alt="">
         <div class="contenido__informacion">
@@ -94,12 +108,13 @@
     </div>
   </section>
 
+  <!-- Encabezado de pagina -->
   <section class="footer">
-    <p class="footer__derechos">Derechos reservados a The style of Brooklyn</p>
-    <div class="">
-      <span>Contactanos:</span>
-      <p>Telefono: XXXXXXXXXX</p>
-      <p>Direccion: XX-XXXXX-XXXX</p>
+    <div class="footer__contactanos">
+      <p class="footer__derechos">Derechos reservados a The style of Brooklyn</p>
+      <span class="footer__text">Contactanos:</span>
+      <p class="footer__text">Telefono: XXXXXXXXXX</p>
+      <p class="footer__text">Direccion: XX-XXXXX-XXXX</p>
     </div>
   </section>
 
