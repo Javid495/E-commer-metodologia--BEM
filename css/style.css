@@ -23,6 +23,7 @@
 body{
   font-family: "Bitcount Grid Double", system-ui;
   background-color: var(--cuarto);
+  
 }
 
 /* Estilos aplicados del contenedor navbar */
@@ -196,9 +197,11 @@ body{
 
 /* Estilos de encabezado de pagina */
 .footer{
-  margin-top: 30px;
+  margin-top: 6rem;
   background-color: var(--tercero);
   color: white;
+  position: relative;
+  bottom: 1;
 }
 
 .footer__derechos{
